@@ -244,7 +244,24 @@ def make_linkedin_connection(nova, linkedin_url, person_data, tracker_worksheet=
             update_progress("CAPTCHA_HANDLING", trace_steps)
             input("Please solve the captcha and press Enter to continue...")
         
-        # First check if there's a Connect button directly visible on the page
+        # First check for mutual connections - this indicates we're already connected
+        print("🔍 Checking for mutual connections indicator...")
+        trace_steps.append("Checking for mutual connections")
+        update_progress("CHECKING_MUTUAL_CONNECTIONS", trace_steps)
+        mutual_connections_result = nova.act("Can you see text about mutual connections on this profile page? Look for text like 'X mutual connections' or 'John Smith, Jane Doe, and X other mutual connections'.", 
+                                           schema=BOOL_SCHEMA, max_steps=3)
+        print(f"Mutual connections check: {mutual_connections_result.response}")
+        
+        if mutual_connections_result.matches_schema and mutual_connections_result.parsed_response:
+            print("✅ Found mutual connections indicator - Already connected to this profile!")
+            trace_steps.append("Found mutual connections - Already connected")
+            update_progress("CONNECTED", trace_steps)
+            return True, "CONNECTED", " -> ".join(trace_steps)
+        
+        trace_steps.append("No mutual connections found")
+        print("📝 No mutual connections found - person is not connected yet")
+        
+        # Now check if there's a Connect button directly visible on the page
         print("🔍 First checking for directly visible Connect button...")
         trace_steps.append("Checking for direct Connect button")
         update_progress("CHECKING_CONNECT_BUTTON", trace_steps)
