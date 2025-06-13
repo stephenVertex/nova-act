@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # setup_env.sh - bootstrap a Python virtual environment with uv and install project requirements
 #
-# Usage: ./setup_env.sh [--force]
-#        --force  Recreate the .venv directory if it already exists.
+# Usage: ./setup_env.sh [VENV_DIR] [--force]
+#        VENV_DIR  Optional virtual environment directory name (default: .venv-${HOSTNAME})
+#        --force   Recreate the VENV_DIR directory if it already exists.
 #
 # Prerequisites:
 #   • bash (or compatible shell)
@@ -12,12 +13,31 @@
 # Notes:
 #   • Google Chrome is assumed to already be installed – no Playwright browser installation step is included.
 #   • After the script finishes, activate the environment with:
-#         source .venv/bin/activate
+#         source <VENV_DIR>/bin/activate
 #
 set -euo pipefail
 
-VENV_DIR=".venv"
-FORCE=${1:-}
+# Parse arguments
+VENV_DIR=""
+FORCE=""
+
+for arg in "$@"; do
+  case $arg in
+    --force)
+      FORCE="--force"
+      ;;
+    *)
+      if [[ -z "$VENV_DIR" ]]; then
+        VENV_DIR="$arg"
+      fi
+      ;;
+  esac
+done
+
+# Set default VENV_DIR if not provided
+if [[ -z "$VENV_DIR" ]]; then
+  VENV_DIR=".venv-${HOSTNAME}"
+fi
 
 # -------- Helper functions --------
 command_exists() {
@@ -57,7 +77,7 @@ fi
 
 # -------- Install dependencies --------
 info "Installing dependencies from requirements.txt ..."
-uv pip install -r requirements.txt
+uv pip install --python "$VENV_DIR/bin/python" -r requirements.txt
 
 info "Setup complete. Activate the environment with:"
 printf '\n    source %s/bin/activate\n\n' "$VENV_DIR" 
