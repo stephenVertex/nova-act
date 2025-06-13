@@ -1,0 +1,140 @@
+{
+  "scraped_heroes": [
+    {
+      "name": "Ahmed Bebars",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/ahmed-bebars/",
+      "subject": "AWS Container Hero"
+    },
+    {
+      "name": "AJ Stuyvenberg",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/aj-stuyvenberg/",
+      "subject": "AWS Serverless Hero"
+    },
+    {
+      "name": "Alex DeBrie",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/alex-de-brie/",
+      "subject": "AWS Data Hero"
+    },
+    {
+      "name": "Allen Helton",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/allen-helton/",
+      "subject": "AWS Serverless Hero"
+    },
+    {
+      "name": "Amy Tseng",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/amy-tseng/",
+      "subject": "AWS Data Hero"
+    },
+    {
+      "name": "Brian LeRoux",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/brian-leroux/",
+      "subject": "AWS Serverless Hero"
+    },
+    {
+      "name": "Brian Tarbox",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/brian-tarbox/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Bryan Chasko",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/bryan-chasko/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Calvin Hendryx-Parker",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/calvin-hendryx-parker/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Chris Farris",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/chris-farris/",
+      "subject": "AWS Security Hero"
+    },
+    {
+      "name": "Dave Stauffer",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/dave-stauffer/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Denis Astahov",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/denis-astahov/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Drew Firment",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/drew-firment/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Ed Miller",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/ed-miller/",
+      "subject": "AWS Machine Learning Hero"
+    },
+    {
+      "name": "Elliott Cordo",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/elliott-cordo/",
+      "subject": "AWS Data Hero"
+    },
+    {
+      "name": "Chris Miller",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/chris-miller/",
+      "subject": "AWS Machine Learning Hero"
+    },
+    {
+      "name": "Andrew Brown",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/andrew-brown/",
+      "subject": "AWS Community Hero"
+    },
+    {
+      "name": "Michael Ezzell",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/michael-ezzell/",
+      "subject": "AWS Community Hero",
+      "page_scraped": 5,
+      "scraped_timestamp": "2025-06-12T14:45:42.833324"
+    },
+    {
+      "name": "Mike Fiedler",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/mike-fiedler/",
+      "subject": "AWS Container Hero",
+      "page_scraped": 5,
+      "scraped_timestamp": "2025-06-12T14:45:42.833339"
+    },
+    {
+      "name": "Namrata Shah",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/namrata-shah/",
+      "subject": "AWS Community Hero",
+      "page_scraped": 5,
+      "scraped_timestamp": "2025-06-12T14:45:42.833340"
+    },
+    {
+      "name": "Noah Gift",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/noah-gift/",
+      "subject": "AWS Machine Learning Hero",
+      "page_scraped": 5,
+      "scraped_timestamp": "2025-06-12T14:45:42.833341"
+    },
+    {
+      "name": "Peter Sankauskas",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/peter-sankauskas/",
+      "subject": "AWS Community Hero",
+      "page_scraped": 5,
+      "scraped_timestamp": "2025-06-12T14:45:42.833342"
+    },
+    {
+      "name": "Tom McLaughlin",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/tom-mclaughlin/",
+      "subject": "AWS Serverless Hero",
+      "page_scraped": 6,
+      "scraped_timestamp": "2025-06-12T14:45:47.656157"
+    },
+    {
+      "name": "Vicky Seno",
+      "profile_url": "https://aws.amazon.com/developer/community/heroes/vicky-seno/",
+      "subject": "AWS Container Hero",
+      "page_scraped": 6,
+      "scraped_timestamp": "2025-06-12T14:45:47.656161"
+    }
+  ],
+  "last_updated": "2025-06-12T14:45:47.949537",
+  "total_count": 24
+}
